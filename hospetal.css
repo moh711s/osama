@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: right;
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: right;
+}
+
+/* About Hospital Section */
+.about-hospital {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.about-hospital img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.about-hospital p {
+    font-size: 18px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Doctors Section */
+.doctor-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.doctor {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.doctor img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.doctor p {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.doctor:hover img {
+    transform: translateY(-20px);
+    opacity: 0.7;
+}
+
+.doctor:hover p {
+    opacity: 1;
+}
+
+/* Services Section */
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.service img {
+    width: 700px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 50px;
+    text-align: right;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-options {
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ffeb3b;
+    transform: translateY(-10px);
+}
+
+.contact-link:hover::after {
+    content: " 771663075";
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.footer-left {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 14px;
+}
